@@ -1,0 +1,84 @@
+body {
+  font-size: 30px;
+  background: url(/MesIcônes/pluieDeFond.jpeg);
+   min-height:100vh;
+     justify-content: center;
+     align-items: center;
+   padding: 0;
+   margin: 0;
+}
+
+#conteneur {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+#conteneur1{
+  display: flex;
+  justify-content: center;
+}
+
+.recherche1{
+  margin-bottom: 40px;
+  border-radius: 10px;
+  min-height: 30px;
+}
+
+.recherche2{
+  margin-left: 5px;
+  border: dashed 2px;
+  padding: 10px;
+  margin-bottom: 40px;
+  border-radius: 90px;
+  min-height: 35px;
+  width: 120px;
+  background: rgba(0, 123, 255, 1);
+}
+
+#conteneur2{
+  display: grid;
+ grid-template-columns: repeat(2 , 1fr);
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  min-height: 300px;
+  background-color: #0032FF;
+}
+
+.flex{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 3px;
+  font-family : "Comic Sans MS", cursive;
+}
+
+#ville{
+  min-width: 150px;
+  min-height: 150px;
+  background-color: rgba(179, 210, 212, 1);
+}
+
+#temperature{
+  min-width: 150px;
+  min-height: 150px;
+  background-color: rgba(179, 172, 230, 1);
+}
+
+#humidite{
+  min-width: 150px;
+  min-height: 150px;
+  background-color: rgba(178, 221, 142, 1);
+}
+
+#vent{
+  min-width: 150px;
+  min-height: 150px;
+  background-color: rgba(94, 228, 255, 1);
+}
