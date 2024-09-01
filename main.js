@@ -11,6 +11,8 @@ const url = `https://api.openweathermap.org/data/2.5/weather?q=${choisirVille}&a
 
 fetch(url).then((conakry) => conakry.json().then((donnees) => {
   console.log(donnees);
+  
+  
   ville = document.querySelector('#ville');
 
  ville.innerHTML = `
@@ -45,10 +47,21 @@ fetch(url).then((conakry) => conakry.json().then((donnees) => {
 }
 )
 ).catch((erreur) => {
+    ville = document.querySelector('#ville');
+
+  ville.innerHTML = " VEUILLEZ S'IL-VOUS-PLAÎT";
+  temperature = document.querySelector('#temperature');
   
-  if(ville.innerHTML == 'undefined' || villes.value =='' || villes.value == 'Number'  ){
+  temperature.innerHTML = ` VÉRIFIEZ `;
   
-  }
+  humidite = document.querySelector('#humidite');
+  
+  humidite.innerHTML = ` VOTRE `;
+  
+  vent = document.querySelector('#vent');
+  
+ vent.innerHTML = ` CONNEXION INTERNET`;
+  
 })
 }
 
